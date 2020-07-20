@@ -12,7 +12,7 @@ class Products extends CI_Controller{
         $this->load->view("admin/product/list", $data);
     }
 
-    public function ada(){
+    public function add(){
         $product = $this->product_model;
         $validation = $this->form_validation;
         $validation->set_rules($product->rules());
@@ -52,6 +52,4 @@ class Products extends CI_Controller{
         }
     }
 }
-
-
 ?>
